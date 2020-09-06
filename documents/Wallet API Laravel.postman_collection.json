@@ -1,0 +1,505 @@
+{
+	"info": {
+		"_postman_id": "8d697869-53a5-4fd0-84f6-6864e3cf51f7",
+		"name": "Wallet API Laravel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Manuel Hamana",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "document",
+							"value": "14284408",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cellphone",
+							"value": "3932294",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "hamanamanuel@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGU4ZjA3Yjc5OTE2MDgyYWVkNTUyOTVjYjNjZDllZjU5NzRlYmQ1Y2VkZDVhMDgzZjk1Zjk5Y2JmN2U4YjI0NGE3MTIxNzJhMGJlM2IyYjIiLCJpYXQiOjE1OTkxOTA4NDQsIm5iZiI6MTU5OTE5MDg0NCwiZXhwIjoxNjMwNzI2ODQ0LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.Lqdl0B2AS-Xy2G_-213fwvQh6EqAfChOt2UWBKaVAcYU-w-eeM00UWB2PoeYl_A-H1MwjACl6fqz_8rkn5cpsdAXGcOnw6mg2XT_0tBpdB9FkQ34Qpd8bx4D-2YgQNiqupI3HqSbOop0_6psfxJBqrrX6FQeE-D4--mgiNLe3eelj12QQJaPyG_rKDC5yRhF8m6tzUKzU7DdiijVzlPYQCiVA0sjOMRAvNjZqhL8SfTPdPiXvu4Cv6lEmM84i3vXSyohaSSwpNy8DyzV1eRnNkfeXYaV0IM187Rl1boAy3Oe_Lls2uY5XhNETKGhuXSh-Sir4jtpRlscgfA3PjttgauEAaMgyi_sgpjHpBaNB8dffuG2xBXM15BEQUxwY3tDJ7EJaT1JBkrUVQvcznbGGe-U-zStN3-9VOyPRn6wuWPf6np2nnfdi_QfqgHGM799BZSq1Fwxg1Ej0pAxZcGA38TrQg3JqxwWoLXNKsEPRMLhV1_B2ExiQCIPn_0mEONd5nLKUNAtfM2rvFjsFkzzlA-_qKrJbwqopD1RK9P8EK9AFAu5d6VLQlzW98RwyQ-2PRcoo6f10IWqfOw3lJqcc8i_BXYffZM3IAndzEYAMAPWSvdgm0m8C4R-118SZPY8Ra4fdJShs4gVjGYn9AGSrFAF4s06E6H9rB6uL5rbdDg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Manuel Hamana",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "document",
+							"value": "14284408",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cellphone",
+							"value": "3932294",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "hamanamanuel@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Manuel Hamana",
+							"type": "text"
+						},
+						{
+							"key": "document",
+							"value": "14284408",
+							"type": "text"
+						},
+						{
+							"key": "cellphone",
+							"value": "3932294",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "prueba@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDVlYmRkYzYxZDFjMjc2NDlmNzM4NzQ3NTg2OWE5OTVkNTlkYTRiZGIwZmYxNGM0MGIzNzZkNzdiOTNlMWU5NDNhZWQ5ZGI4OTA3MzA1MmYiLCJpYXQiOjE1OTkxOTE1MDcsIm5iZiI6MTU5OTE5MTUwNywiZXhwIjoxNjMwNzI3NTA3LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.llbIp6g6QgGHFc8A63paQJjvfy0D-uG5CLoWQqL91gjsVh-UTLqCsbuJECiUHMcLBvcFY59_4GKvViayIl97kXO3aFfmv20ASfXoH2Wp-qbq5-HBPNgMm91bHfGqFu7bfRehzMXgcVqe3PbUd80yTAPHSDUEd1ZO-xT1Q6R62NqEUaeqy-Fnf81W9pFs_JZHrBNBM4oGk1pC3TR2SIS8uOW6EgRzBoVtcCod679eTVt4PpLMQG029fE_9YUi49KZrFZHfZ5__KqgheHjBTHxparfjzC5CidRJaWomKbUVNOiP-yyho9MrUK2DfpFOXtI56oXjU0Vwp1QFrdxO583nLQ1GqM17S8FDTwJQ2ecbwyCjqjg3jVqQkiWUJMC_kzh4shqORypEiA_EWRcPMOu5c3itDLn777vIHfsTzJsv8xADFlI-EpbPD8fGS6rqg-gNEIF2D0GdV1dUYI9GB8t7yXk0v2uKnOe8Y2G0RVUgJjK-BAyIp3s6uBN22jKyLB_E9tqruuDu4esCk6wa544lFa9k6r_Ly8p9SjVRnNJMEFM7qYXmdKyELEFvqFhva_WBXITzsy4st_nLfPHXoS2nlbdjyb8SamVC4UwvpbQrfXfykFe-d4mTkEeFaUVOh0OKp64ZA4AC2bgdWxq25t3UqyuDvW0gocfOcxaRQU2stU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Manuel Hamana",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "document",
+							"value": "14284408",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cellphone",
+							"value": "3932294",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "hamanamanuel@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "balance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTAxMmZhM2ExMzQ4NTNhZGMxYjFiOGJmZWZkODczNDg5MjhjNDA0NmJlMjU2OTJmMjU0ZDA3MGQzN2ZjNGU3ZGU0MDEyN2EyZWJiODBlZjEiLCJpYXQiOjE1OTk0MjY5MjYsIm5iZiI6MTU5OTQyNjkyNiwiZXhwIjoxNjMwOTYyOTI2LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.OESdYAO5ZVO3nzJsyWJl0hP3_5h7n4YJUINLfQLaYVtXM4xTy3fJdQ7Iw3f4_dazTtxBOJkbkyq68SVX6GSguJlTuV5KWp9VjXzf749PGPo4bkMObuKL0_f4bPf5QE82HUir1lKVWgUTQByDdg9NVCjTtSd89Yr-_GMjWyqt2zxb-aLT474rO5aOUEirpci9LrBCzva1T7plH48EFEUTpgS0KR3Ep4MY9_vxzBzs9VswmfT06zGspt_JXDyHz_I1ReD2C3eLfQBfYFBn5VoAGhhz3NlhYVM46y6uaVLMlVT_4xLzWMTHCWK8wwzfkd3qUY3_yl9rdnH65NZWnM1nOJ8IJwvhwKrx6yFtTDVXU1K8tCgYn8WN9kwV9w702g8iz87JzE1johYM2dQmh-euRVHmZA1LZqabPgPaqIXkLHxiNdTHIqxTJW8b0UjyL_nVRerwjGbLqlvTKILlP1eUuzr7B3eYU90XQBiCZ8Dbavq1ifnjIaQH-V691W-c9-tpQR33e54uY-sHrvwWVkgVKkEztcWAMHzWouFI80Y6WxWZZZEtsNZGlUCipSHH5OZX6z3qs4TU5_oWfUNnEDtQZMoKuwl1SuTJ7-3cH8sx5yFCSbF05Ph0fjy7P6H-NmIlOQUllAK4swZ4qPV0vIgHxFcMJaK36fxYvgEkqJR431E",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "document",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "cellphone",
+							"value": "3932294",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/balance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "recharge",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTAxMmZhM2ExMzQ4NTNhZGMxYjFiOGJmZWZkODczNDg5MjhjNDA0NmJlMjU2OTJmMjU0ZDA3MGQzN2ZjNGU3ZGU0MDEyN2EyZWJiODBlZjEiLCJpYXQiOjE1OTk0MjY5MjYsIm5iZiI6MTU5OTQyNjkyNiwiZXhwIjoxNjMwOTYyOTI2LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.OESdYAO5ZVO3nzJsyWJl0hP3_5h7n4YJUINLfQLaYVtXM4xTy3fJdQ7Iw3f4_dazTtxBOJkbkyq68SVX6GSguJlTuV5KWp9VjXzf749PGPo4bkMObuKL0_f4bPf5QE82HUir1lKVWgUTQByDdg9NVCjTtSd89Yr-_GMjWyqt2zxb-aLT474rO5aOUEirpci9LrBCzva1T7plH48EFEUTpgS0KR3Ep4MY9_vxzBzs9VswmfT06zGspt_JXDyHz_I1ReD2C3eLfQBfYFBn5VoAGhhz3NlhYVM46y6uaVLMlVT_4xLzWMTHCWK8wwzfkd3qUY3_yl9rdnH65NZWnM1nOJ8IJwvhwKrx6yFtTDVXU1K8tCgYn8WN9kwV9w702g8iz87JzE1johYM2dQmh-euRVHmZA1LZqabPgPaqIXkLHxiNdTHIqxTJW8b0UjyL_nVRerwjGbLqlvTKILlP1eUuzr7B3eYU90XQBiCZ8Dbavq1ifnjIaQH-V691W-c9-tpQR33e54uY-sHrvwWVkgVKkEztcWAMHzWouFI80Y6WxWZZZEtsNZGlUCipSHH5OZX6z3qs4TU5_oWfUNnEDtQZMoKuwl1SuTJ7-3cH8sx5yFCSbF05Ph0fjy7P6H-NmIlOQUllAK4swZ4qPV0vIgHxFcMJaK36fxYvgEkqJR431E"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "document",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "cellphone",
+							"value": "3932294",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "500",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/recharge",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"recharge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "payment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTAxMmZhM2ExMzQ4NTNhZGMxYjFiOGJmZWZkODczNDg5MjhjNDA0NmJlMjU2OTJmMjU0ZDA3MGQzN2ZjNGU3ZGU0MDEyN2EyZWJiODBlZjEiLCJpYXQiOjE1OTk0MjY5MjYsIm5iZiI6MTU5OTQyNjkyNiwiZXhwIjoxNjMwOTYyOTI2LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.OESdYAO5ZVO3nzJsyWJl0hP3_5h7n4YJUINLfQLaYVtXM4xTy3fJdQ7Iw3f4_dazTtxBOJkbkyq68SVX6GSguJlTuV5KWp9VjXzf749PGPo4bkMObuKL0_f4bPf5QE82HUir1lKVWgUTQByDdg9NVCjTtSd89Yr-_GMjWyqt2zxb-aLT474rO5aOUEirpci9LrBCzva1T7plH48EFEUTpgS0KR3Ep4MY9_vxzBzs9VswmfT06zGspt_JXDyHz_I1ReD2C3eLfQBfYFBn5VoAGhhz3NlhYVM46y6uaVLMlVT_4xLzWMTHCWK8wwzfkd3qUY3_yl9rdnH65NZWnM1nOJ8IJwvhwKrx6yFtTDVXU1K8tCgYn8WN9kwV9w702g8iz87JzE1johYM2dQmh-euRVHmZA1LZqabPgPaqIXkLHxiNdTHIqxTJW8b0UjyL_nVRerwjGbLqlvTKILlP1eUuzr7B3eYU90XQBiCZ8Dbavq1ifnjIaQH-V691W-c9-tpQR33e54uY-sHrvwWVkgVKkEztcWAMHzWouFI80Y6WxWZZZEtsNZGlUCipSHH5OZX6z3qs4TU5_oWfUNnEDtQZMoKuwl1SuTJ7-3cH8sx5yFCSbF05Ph0fjy7P6H-NmIlOQUllAK4swZ4qPV0vIgHxFcMJaK36fxYvgEkqJR431E"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "document",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "cellphone",
+							"value": "3932294",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "50",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/payment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "confirmPayment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTAxMmZhM2ExMzQ4NTNhZGMxYjFiOGJmZWZkODczNDg5MjhjNDA0NmJlMjU2OTJmMjU0ZDA3MGQzN2ZjNGU3ZGU0MDEyN2EyZWJiODBlZjEiLCJpYXQiOjE1OTk0MjY5MjYsIm5iZiI6MTU5OTQyNjkyNiwiZXhwIjoxNjMwOTYyOTI2LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.OESdYAO5ZVO3nzJsyWJl0hP3_5h7n4YJUINLfQLaYVtXM4xTy3fJdQ7Iw3f4_dazTtxBOJkbkyq68SVX6GSguJlTuV5KWp9VjXzf749PGPo4bkMObuKL0_f4bPf5QE82HUir1lKVWgUTQByDdg9NVCjTtSd89Yr-_GMjWyqt2zxb-aLT474rO5aOUEirpci9LrBCzva1T7plH48EFEUTpgS0KR3Ep4MY9_vxzBzs9VswmfT06zGspt_JXDyHz_I1ReD2C3eLfQBfYFBn5VoAGhhz3NlhYVM46y6uaVLMlVT_4xLzWMTHCWK8wwzfkd3qUY3_yl9rdnH65NZWnM1nOJ8IJwvhwKrx6yFtTDVXU1K8tCgYn8WN9kwV9w702g8iz87JzE1johYM2dQmh-euRVHmZA1LZqabPgPaqIXkLHxiNdTHIqxTJW8b0UjyL_nVRerwjGbLqlvTKILlP1eUuzr7B3eYU90XQBiCZ8Dbavq1ifnjIaQH-V691W-c9-tpQR33e54uY-sHrvwWVkgVKkEztcWAMHzWouFI80Y6WxWZZZEtsNZGlUCipSHH5OZX6z3qs4TU5_oWfUNnEDtQZMoKuwl1SuTJ7-3cH8sx5yFCSbF05Ph0fjy7P6H-NmIlOQUllAK4swZ4qPV0vIgHxFcMJaK36fxYvgEkqJR431E"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "document",
+							"value": "123456",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cellphone",
+							"value": "3932294",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "amount",
+							"value": "50",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "token",
+							"value": "SzTO9J",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/confirmPayment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"confirmPayment"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
