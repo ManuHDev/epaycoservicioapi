@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\SendMail;
+//use Mail;
+use App\Mail\MailPayment;
 
 class UserController extends Controller
 {
@@ -84,16 +85,14 @@ class UserController extends Controller
         $dataEmail->amount = $request->amount;
         $dataEmail->status = 'PENDING';
         $dataEmail->name = auth()->user()->name;
-        //Mail::to(auth()->user()->email)->send(new SendMail($dataEmail));
-        /*Mail::send('emails.payment',$dataEmail, function($msj){
-            $msj->subject('Correo de Prueba');
-            $msj->to('preirers@hotmail.com');
-        });*/
+        
+        Mail::to($user->email)->send(new MailPayment($dataEmail));
 
         return response()->json([
             'status' => 'pending',
             'token' => $token,
-            'amount' => $result->amount
+            'amount' => $result->amount,
+            'email' => $user->email
         ], Response::HTTP_OK);
     }
 
